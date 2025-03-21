@@ -42,7 +42,7 @@ with col_left:
     st.subheader("Select a Country")
     Country_choose = st.selectbox("Select a country:", data["Country"]), 
 
-    index=data.index[data["Country"] == st.session_state["Country_choose"]].tolist()[0])
+    index=data.index[data["Country"] == st.session_state["Country_choose"]].tolist()[0]
     st.session_state["Country_choose"] = Country_choose  # Met à jour la sélection
     
 # Country statistics
