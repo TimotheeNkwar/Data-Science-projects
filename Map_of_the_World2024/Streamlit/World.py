@@ -10,7 +10,7 @@ st.title("World Data")
 # Charge data
 @st.cache_data
 def load_data():
-    return pd.read_csv("C://Users//KOVVO//OneDrive//Documents//GitHub//Data-Science-Projects//projet1//DataScience//Map_of_the_World2024//Streamlit//World Population by country 2024.csv")
+    return pd.read_csv("World Population by country 2024.csv")
 
 data = load_data()
 st.write("Overview of data:", data.head())
