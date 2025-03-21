@@ -1,4 +1,4 @@
-#import usefull libraries
+# Import useful libraries
 import plotly.express as px
 import streamlit as st
 import pandas as pd
@@ -7,51 +7,65 @@ import pandas as pd
 st.set_page_config(layout="wide")
 st.title("World Data")
 
-# Charge data
+# Load data
 @st.cache_data
 def load_data():
-    return pd.read_csv("World Population by country 2024.csv")
+    try:
+        return pd.read_csv("World Population by country 2024.csv")  # Chemin relatif
+    except FileNotFoundError:
+        st.error("Fichier CSV introuvable. Vérifiez qu'il est bien dans votre repo GitHub.")
+        return pd.DataFrame()  # Retourne un DataFrame vide pour éviter les erreurs
 
 data = load_data()
+
+if data.empty:
+    st.stop()  # Stoppe l'exécution si le fichier n'est pas trouvé
+
 st.write("Overview of data:", data.head())
 
-# --- TOP 5 Country ---
-st.sidebar.subheader("Top 5 most populous Countries")
+# --- Sidebar: Top 5 Most Populous Countries ---
+st.sidebar.subheader("Top 5 Most Populous Countries")
 top_Country = ["INDIA", "CHINA", "USA", "INDONESIA", "PAKISTAN"]
+
+if "Country_choose" not in st.session_state:
+    st.session_state["Country_choose"] = "INDIA"  # Valeur par défaut
 
 for i, country in enumerate(top_Country):
     if st.sidebar.button(f"{i+1}. {country}"):
-        Country_choose = country  # Select the country
+        st.session_state["Country_choose"] = country  # Mise à jour de la sélection
 
 # --- BODY ---
 col_left, col_center, col_right = st.columns([1, 2, 1])
 
-# list of country
+# Country selection
 with col_left:
     st.subheader("Select a Country")
-    Country_choose = st.selectbox("Select a country:", data["Country"])
+    Country_choose = st.selectbox("Select a country:", data["Country"], 
+                                  index=data.index[data["Country"] == st.session_state["Country_choose"]].tolist()[0])
+    st.session_state["Country_choose"] = Country_choose  # Met à jour la sélection
 
-# INFOS DÉTAILLÉES
+# Country statistics
 with col_right:
     st.subheader(f"Statistics of {Country_choose}")
     Country_data = data[data["Country"] == Country_choose]
     
     if not Country_data.empty:
-        st.metric("Population 2024", Country_data["Population 2024"].values[0])
-        st.metric("Density (hab/km²)", Country_data["Density (/km2)"].values[0])
-        st.metric("Area (km²)", Country_data["Area (km2)"].values[0])
-        st.metric("Growth Rate)", Country_data["Growth Rate"].values[0])
-        st.metric("World %)", Country_data["World %"].values[0])
-        st.metric("World Rank)", Country_data["World Rank"].values[0])
-# MAP 
+        st.metric("Population 2024", f"{Country_data['Population 2024'].values[0]:,}")
+        st.metric("Density (hab/km²)", f"{Country_data['Density (/km2)'].values[0]:,}")
+        st.metric("Area (km²)", f"{Country_data['Area (km2)'].values[0]:,}")
+        st.metric("Growth Rate", f"{Country_data['Growth Rate'].values[0]}%")
+        st.metric("World %", f"{Country_data['World %'].values[0]}%")
+        st.metric("World Rank", f"{Country_data['World Rank'].values[0]}")
+
+# --- MAP Highlighting Selected Country ---
 with col_center:
     data["highlight"] = data["Country"].apply(lambda x: 1 if x == Country_choose else 0)
 
     fig = px.choropleth(
         data,                     
         locations="Country",            
-        locationmode="country names", 
-        color="highlight",  # Mettre en évidence le pays sélectionné
+        locationmode="country names",
+        color="highlight",
         hover_name="Country",
         hover_data={
             "Population 2024": True,
@@ -61,29 +75,27 @@ with col_center:
             "Growth Rate": True,
             "World %": True
         },
-        title="World Map",
-        color_continuous_scale=["lightgray", "yellow"]  # Rouge pour le pays sélectionné
+        title="Selected Country Highlighted",
+        color_continuous_scale=["lightgray", "yellow"]
     )
 
     fig.update_geos(projection_type="orthographic")
-    fig.update_layout(width=1000, height=600)  
+    fig.update_layout(width=1000, height=600)
     st.plotly_chart(fig, use_container_width=True)
-# MAP OF WORLD
+
+# --- WORLD POPULATION MAP ---
 with col_center:
     fig = px.choropleth(
-    data,                     
-    locations="Country",            
-    locationmode="country names", # Use country names as locations
-    color="Population 2024",  # Use population 2024 as color
-    hover_name="Country",  # show the name of the country in the hover
-    hover_data={  # show the data in the hover
-        "Population 2024": True,
-    },
-    title="Population of the world (2024)",  # title of the plot    
-    color_continuous_scale="inferno_r", # reverse the color scale
- 
+        data,                     
+        locations="Country",            
+        locationmode="country names",
+        color="Population 2024",
+        hover_name="Country",
+        hover_data={"Population 2024": True},
+        title="Population of the World (2024)",
+        color_continuous_scale="inferno_r"
     )
 
-fig.update_geos(projection_type="orthographic")  # the projection type
-fig.update_layout(width=1200, height=800)  # size of the plot
-st.plotly_chart(fig, use_container_width=False)
+    fig.update_geos(projection_type="orthographic")
+    fig.update_layout(width=1200, height=800)
+    st.plotly_chart(fig, use_container_width=False)
