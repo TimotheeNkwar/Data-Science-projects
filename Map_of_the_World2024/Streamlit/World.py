@@ -1,12 +1,13 @@
+#import usefull libraries
 import plotly.express as px
 import streamlit as st
 import pandas as pd
 
-# Configurer la page
+# Configure the page
 st.set_page_config(layout="wide")
 st.title("World Data")
 
-# Charger les données
+# Charge data
 @st.cache_data
 def load_data():
     return pd.read_csv("C://Users//KOVVO//Desktop//Streamlit//World Population by country 2024.csv")
@@ -20,12 +21,12 @@ top_Country = ["INDIA", "CHINA", "USA", "INDONESIA", "PAKISTAN"]
 
 for i, country in enumerate(top_Country):
     if st.sidebar.button(f"{i+1}. {country}"):
-        Country_choose = country  # Sélectionne automatiquement le pays si cliqué
+        Country_choose = country  # Select the country
 
 # --- BODY ---
 col_left, col_center, col_right = st.columns([1, 2, 1])
 
-# LISTE DES PAYS
+# list of country
 with col_left:
     st.subheader("Select a Country")
     Country_choose = st.selectbox("Select a country:", data["Country"])
@@ -42,7 +43,7 @@ with col_right:
         st.metric("Growth Rate)", Country_data["Growth Rate"].values[0])
         st.metric("World %)", Country_data["World %"].values[0])
         st.metric("World Rank)", Country_data["World Rank"].values[0])
-# MAP AVEC LE PAYS SÉLECTIONNÉ EN COULEUR DISTINCTE
+# MAP 
 with col_center:
     data["highlight"] = data["Country"].apply(lambda x: 1 if x == Country_choose else 0)
 
