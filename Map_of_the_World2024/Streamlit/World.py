@@ -85,7 +85,7 @@ with col_center:
     )
 
     fig.update_geos(projection_type="orthographic")
-    fig.update_layout(width=1000, height=600)
+    fig.update_layout(width=1200, height=1000)
     st.plotly_chart(fig, use_container_width=True)
 
 # --- WORLD POPULATION MAP ---
@@ -102,5 +102,5 @@ with col_center:
     )
 
     fig.update_geos(projection_type="orthographic")
-    fig.update_layout(width=1200, height=800)
+    fig.update_layout(width=1200, height=1000)
     st.plotly_chart(fig, use_container_width=False)
