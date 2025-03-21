@@ -11,7 +11,7 @@ st.title("World Data")
 @st.cache_data
 def load_data():
     try:
-        return pd.read_csv("World Population by country 2024.csv")  # Chemin relatif
+        return pd.read_csv("Streamlit/World Population by country 2024.csv")  # Chemin relatif
     except FileNotFoundError:
         st.error("Fichier CSV introuvable. Vérifiez qu'il est bien dans votre repo GitHub.")
         return pd.DataFrame()  # Retourne un DataFrame vide pour éviter les erreurs
