@@ -39,11 +39,11 @@ col_left, col_center, col_right = st.columns([1, 2, 1])
 
 # Country selection
 with col_left:
-    Country_choose = st.selectbox("Select a country:", data["Country"])
+    st.subheader("Select a Country")
+    Country_choose = st.selectbox("Select a country:", data["Country"]), 
 
-    # Update the session state with the selected country
-    st.session_state["Country_choose"] = Country_choose
-  # Met à jour la sélection
+    index=data.index[data["Country"] == st.session_state["Country_choose"]].tolist()[0])
+    st.session_state["Country_choose"] = Country_choose  # Met à jour la sélection
     
 # Country statistics
 with col_right:
