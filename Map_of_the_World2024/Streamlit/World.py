@@ -57,7 +57,7 @@ with col_right:
     if not Country_data.empty:
         st.metric("Population 2024", f"{Country_data['Population 2024'].values[0]:,}")
         st.metric("Density (hab/km²)", f"{Country_data['Density (/km2)'].values[0]:,}")
-        st.metric("Area (km²)", f"{Country_data['Area (km2)'].values[0]:,}")
+        #st.metric("Area (km²)", f"{Country_data['Area (km2)'].values[0]:,}")
         st.metric("Growth Rate", f"{Country_data['Growth Rate'].values[0]}%")
         st.metric("World %", f"{Country_data['World %'].values[0]}%")
         st.metric("World Rank", f"{Country_data['World Rank'].values[0]}")
