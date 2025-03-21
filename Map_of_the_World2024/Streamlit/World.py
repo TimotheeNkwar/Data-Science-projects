@@ -28,11 +28,11 @@ st.sidebar.subheader("Top 5 Most Populous Countries")
 top_Country = ["INDIA", "CHINA", "USA", "INDONESIA", "PAKISTAN"]
 
 if "Country_choose" not in st.session_state:
-    st.session_state["Country_choose"] = "INDIA"  # Valeur par défaut
+    st.session_state["Country_choose"] = "INDIA"  # defaut value
 
 for i, country in enumerate(top_Country):
     if st.sidebar.button(f"{i+1}. {country}"):
-        st.session_state["Country_choose"] = country  # Mise à jour de la sélection
+        st.session_state["Country_choose"] = country  # Mupdate the selection
 
 # --- BODY ---
 col_left, col_center, col_right = st.columns([1, 2, 1])
