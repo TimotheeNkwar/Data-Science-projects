@@ -14,7 +14,7 @@ I am a Data Science enthusiast who loves exploring data, building machine learni
 
  📌 Projects  
 Here are some of my key projects:  
-🔹 [roject 1](#) - Description of your project (e.g., Predicting house prices with ML)  
+🔹 [roject 1](#) - Description of your project (**Laptop_EDA_with_python.ipynb**)  
 🔹 [Project 2](#) - Description of your project (e.g., Interactive dashboard for data visualization)  
 🔹 [Project 3](#) - Description of your project (e.g., NLP-based text classifier)  
 
