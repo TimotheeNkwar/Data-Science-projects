@@ -28,3 +28,16 @@ This project involves building a **machine learning model** to predict a person'
 - The best model achieved an **accuracy of ~89%** on the test set with the knn algorithm.
 - Important features: **height**, **weight**, and **foot size**
 - The model was evaluated using a **confusion matrix**, **precision**, and **recall**
+
+## project 3
+### 🧠 Outlier Detection & Removal – IQR (InterQuartile Range) Method
+
+A data cleaning project aimed at detecting and removing outliers from a dataset using the IQR method.  
+This technique identifies extreme values based on the interquartile range and eliminates them to improve data quality.
+
+- Calculated Q1 and Q3 to find the IQR (Q3 − Q1)
+- Identified outliers outside the range \[Q1 − 1.5×IQR, Q3 + 1.5×IQR\]
+- Removed outliers to obtain a cleaner dataset
+- Applied on real or simulated data with optional visualization (e.g., boxplot)
+
+
