@@ -15,7 +15,7 @@ The goal is to understand **what factors influence laptop prices**, detect **out
 
 ### 🧠 **Predicting Gender Based on Features – Project Summary**
 
-This project involves building a **machine learning model** to predict a person's **gender** based on features such as **height, weight, foot size**, and other biometric traits. The dataset was preprocessed, analyzed, and used to train classification models in Python.
+This project involves building a **machine learning model** to predict a person's **gender** based on features such as **height, weight, Age**, and other biometric traits. The dataset was preprocessed, analyzed, and used to train classification models in Python.
 
 #### ✅ Key steps:
 - **Data cleaning & preprocessing** with `Pandas` and `Scikit-learn`
