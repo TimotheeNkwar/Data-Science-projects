@@ -40,4 +40,18 @@ This technique identifies extreme values based on the interquartile range and el
 - Removed outliers to obtain a cleaner dataset
 - Applied on real or simulated data with optional visualization (e.g., boxplot)
 
+## project 4
+### 🧠 EDA on Crime in the USA
+
+Project focused on performing **Exploratory Data Analysis (EDA)** to understand patterns and trends in crime across the United States.  
+The analysis includes exploring the relationships between crime rates and socio-economic factors, regional differences, and trends over time.
+
+- Loaded and preprocessed the **crime dataset** (e.g., from FBI or open data sources)
+- Analyzed crime rate distributions using **histograms** and **box plots**
+- Investigated correlations between crime rates and socio-economic factors (e.g., unemployment, poverty)
+- Visualized geographic crime patterns using **heatmaps** and **scatter plots**
+- Analyzed crime trends over time and by region
+
+> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn
+
 
