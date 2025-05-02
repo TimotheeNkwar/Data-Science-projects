@@ -26,7 +26,7 @@ This project involves building a **machine learning model** to predict a person'
   - K-Nearest Neighbors (KNN)
 #### 🎯 Results:
 - The best model achieved an **accuracy of ~89%** on the test set with the knn algorithm.
-- Important features: **height**, **weight**, and **foot size**
+- Important features: **height**, **weight**, and **Age**
 - The model was evaluated using a **confusion matrix**, **precision**, and **recall**
 
 ## project 3
