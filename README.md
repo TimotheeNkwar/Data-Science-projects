@@ -54,6 +54,14 @@ A comprehensive **Exploratory Data Analysis (EDA)** project focused on understan
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn
 
+  ## Project 5
 
+### 🧠 Online Sales Data – EDA & Insights
 
+This project involves performing Exploratory Data Analysis (EDA) on an online sales dataset to uncover trends in customer behavior, sales performance, product popularity, and seasonality. The goal is to help businesses make data-driven decisions to optimize marketing, inventory, and revenue strategies.
 
+## project 6
+
+### 🧠 Credit Card Fraud Detection – Project Summary
+
+This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
