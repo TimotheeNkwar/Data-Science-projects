@@ -24,6 +24,7 @@ This project involves building a **machine learning model** to predict a person'
 - **Model training** with algorithms like:
   - Logistic Regression
   - K-Nearest Neighbors (KNN)
+  
 #### 🎯 Results:
 - The best model achieved an **accuracy of ~89%** on the test set with the knn algorithm.
 - Important features: **height**, **weight**, and **Age**
@@ -65,3 +66,5 @@ This project involves performing Exploratory Data Analysis (EDA) on an online sa
 ### 🧠 Credit Card Fraud Detection – Project Summary
 
 This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
+
+🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced 
