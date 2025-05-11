@@ -68,3 +68,11 @@ This project involves performing Exploratory Data Analysis (EDA) on an online sa
 This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
 
 🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced 
+
+## project 7 
+
+### Cutsomer Segmentation
+
+This project uses unsupervised learning (K-Means) to segment customers based on features like
+annual income and spending score. The goal is to identify distinct customer groups to support
+targeted marketing strategies, supported by interactive visualizations.
