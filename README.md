@@ -30,6 +30,7 @@ This project involves building a **machine learning model** to predict a person'
 - Important features: **height**, **weight**, and **Age**
 - The model was evaluated using a **confusion matrix**, **precision**, and **recall**
 
+> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn 
 ## project 3
 ### 🧠 Outlier Detection & Removal – IQR (InterQuartile Range) Method
 
@@ -41,8 +42,8 @@ This technique identifies extreme values based on the interquartile range and el
 - Removed outliers to obtain a cleaner dataset
 - Applied on real or simulated data with optional visualization (e.g., boxplot)
 
+> 🔧 Tools used: Python, Pandas , Seaborn 
 
-## project 4
 
 ### 🧠 EDA on Crime in the USA
 
@@ -53,14 +54,14 @@ A comprehensive **Exploratory Data Analysis (EDA)** project focused on understan
 - **Areas with the Most Crimes**: Analyzed crime distribution across states/cities to highlight crime hotspots.
 - **Crosstab of Age Group and Victim Sex**: Explored the relationship between victim age groups and sex, uncovering demographic trends in victimization.
 
-> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn
+> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn , Plotly
 
   ## Project 5
 
 ### 🧠 Online Sales Data – EDA & Insights  - Project Summary
 
 This project involves performing Exploratory Data Analysis (EDA) on an online sales dataset to uncover trends in customer behavior, sales performance, product popularity, and seasonality. The goal is to help businesses make data-driven decisions to optimize marketing, inventory, and revenue strategies.
-> 🔧 Tools used: Python, Pandas, Matplotlib ,plotly ,matplotlib
+> 🔧 Tools used: Python, Pandas, Matplotlib  , matplotlib
 
 ## project 6
 
@@ -68,7 +69,7 @@ This project involves performing Exploratory Data Analysis (EDA) on an online sa
 
 This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
 
-> 🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced ,plotly
+> 🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced ,Plotly , Skimpy
 
 ## project 7 
 
