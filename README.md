@@ -57,9 +57,10 @@ A comprehensive **Exploratory Data Analysis (EDA)** project focused on understan
 
   ## Project 5
 
-### 🧠 Online Sales Data – EDA & Insights
+### 🧠 Online Sales Data – EDA & Insights  - Project Summary
 
 This project involves performing Exploratory Data Analysis (EDA) on an online sales dataset to uncover trends in customer behavior, sales performance, product popularity, and seasonality. The goal is to help businesses make data-driven decisions to optimize marketing, inventory, and revenue strategies.
+> 🔧 Tools used: Python, Pandas, Matplotlib ,plotly ,matplotlib
 
 ## project 6
 
@@ -67,7 +68,7 @@ This project involves performing Exploratory Data Analysis (EDA) on an online sa
 
 This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
 
-🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced 
+> 🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced ,plotly
 
 ## project 7 
 
@@ -77,7 +78,11 @@ This project uses unsupervised learning (K-Means) to segment customers based on 
 annual income and spending score. The goal is to identify distinct customer groups to support
 targeted marketing strategies, supported by interactive visualizations.
 
+> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
 
+## project 8
 ### 🧠House Price Regression
 
 This project uses **supervised learning** techniques to predict **house prices** based on features such as location, number of rooms, square footage, and more. The goal is to build an accurate **regression model** to support data-driven real estate decisions, with results visualized for interpretability.
+
+> 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
