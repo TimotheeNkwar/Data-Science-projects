@@ -76,6 +76,8 @@ This project focuses on detecting fraudulent transactions using machine learning
 This project uses unsupervised learning (K-Means) to segment customers based on features like
 annual income and spending score. The goal is to identify distinct customer groups to support
 targeted marketing strategies, supported by interactive visualizations.
-### 🧠 Student Performance prediction
 
-***COMMING SOON!***
+
+### 🧠House Price Regression
+
+This project uses **supervised learning** techniques to predict **house prices** based on features such as location, number of rooms, square footage, and more. The goal is to build an accurate **regression model** to support data-driven real estate decisions, with results visualized for interpretability.
