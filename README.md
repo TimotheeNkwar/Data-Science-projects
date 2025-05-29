@@ -87,3 +87,8 @@ targeted marketing strategies, supported by interactive visualizations.
 This project uses **supervised learning** techniques to predict **house prices** based on features such as location, number of rooms, square footage, and more. The goal is to build an accurate **regression model** to support data-driven real estate decisions, with results visualized for interpretability.
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
+
+
+
+
+
