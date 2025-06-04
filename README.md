@@ -11,6 +11,8 @@ This project involves **Exploratory Data Analysis (EDA)** on a dataset of laptop
 
 The goal is to understand **what factors influence laptop prices**, detect **outliers or trends**, and prepare the dataset for further modeling (e.g. price prediction). It’s a great example of applying **data cleaning, visualization, and feature engineering** on real-world tech product data.
 
+## 📁 Project Structure
+
 ## project 2
 
 ### 🧠 **Predicting Gender Based on Features – Project Summary**
@@ -31,6 +33,8 @@ This project involves building a **machine learning model** to predict a person'
 - The model was evaluated using a **confusion matrix**, **precision**, and **recall**
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn 
+## 📁 Project Structure
+
 ## project 3
 ### 🧠 Outlier Detection & Removal – IQR (InterQuartile Range) Method
 
@@ -45,16 +49,7 @@ This technique identifies extreme values based on the interquartile range and el
 > 🔧 Tools used: Python, Pandas , Seaborn 
 
 ## 📁 Project Structure
-- **Data Exploration**  
-  Visualized data distributions with boxplots, histograms, and scatter plots to spot potential outliers.
 
-- **Statistical Techniques**  
-  Applied methods like the **Z-score** and **Interquartile Range (IQR)** to detect anomalies based on numerical thresholds.
-
-- **Handling Outliers**  
-  Decided on appropriate actions: removal, transformation, or separate analysis depending on context and impact.In my case i remove.
-
-- **Visualization**  
   Created before-and-after plots to illustrate the effect of outlier treatment on data distribution.
 
 ### 🧠 EDA on Crime in the USA
@@ -68,13 +63,14 @@ A comprehensive **Exploratory Data Analysis (EDA)** project focused on understan
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn , Plotly
 
+## 📁 Project Structure
   ## Project 5
 
 ### 🧠 Online Sales Data – EDA & Insights  - Project Summary
 
 This project involves performing Exploratory Data Analysis (EDA) on an online sales dataset to uncover trends in customer behavior, sales performance, product popularity, and seasonality. The goal is to help businesses make data-driven decisions to optimize marketing, inventory, and revenue strategies.
 > 🔧 Tools used: Python, Pandas, Matplotlib  , matplotlib
-
+## 📁 Project Structure
 ## project 6
 
 ### 🧠 Credit Card Fraud Detection – Project Summary
@@ -82,7 +78,7 @@ This project involves performing Exploratory Data Analysis (EDA) on an online sa
 This project focuses on detecting fraudulent transactions using machine learning classification algorithms. The dataset contains real transaction data, with features engineered from customer behavior and anonymized for privacy. Given the high class imbalance (few fraud cases), the project places special emphasis on data preprocessing and evaluation metrics beyond accuracy.
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Class inbalanced ,Plotly , Skimpy
-
+## 📁 Project Structure
 ## project 7 
 
 ### 🧠 Cutsomer Segmentation
@@ -92,14 +88,14 @@ annual income and spending score. The goal is to identify distinct customer grou
 targeted marketing strategies, supported by interactive visualizations.
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
-
+## 📁 Project Structure
 ## project 8
 ### 🧠House Price Regression
 
 This project uses **supervised learning** techniques to predict **house prices** based on features such as location, number of rooms, square footage, and more. The goal is to build an accurate **regression model** to support data-driven real estate decisions, with results visualized for interpretability.
 
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
-
+## 📁 Project Structure
 
 ## project 9
 ### 🧠 Twitter Sentiment Analysis
