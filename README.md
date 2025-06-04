@@ -44,6 +44,18 @@ This technique identifies extreme values based on the interquartile range and el
 
 > 🔧 Tools used: Python, Pandas , Seaborn 
 
+## 📁 Project Structure
+- **Data Exploration**  
+  Visualized data distributions with boxplots, histograms, and scatter plots to spot potential outliers.
+
+- **Statistical Techniques**  
+  Applied methods like the **Z-score** and **Interquartile Range (IQR)** to detect anomalies based on numerical thresholds.
+
+- **Handling Outliers**  
+  Decided on appropriate actions: removal, transformation, or separate analysis depending on context and impact.In my case i remove.
+
+- **Visualization**  
+  Created before-and-after plots to illustrate the effect of outlier treatment on data distribution.
 
 ### 🧠 EDA on Crime in the USA
 
