@@ -89,6 +89,15 @@ This project uses **supervised learning** techniques to predict **house prices**
 > 🔧 Tools used: Python, Pandas, Matplotlib, Seaborn,scikit-learn
 
 
+## project 9
+### 🧠 Twitter Sentiment Analysis
+
+This project performs sentiment analysis on tweets using machine learning and natural language processing (NLP) techniques.  
+It is containerized with Docker for easy and portable deployment.
+
+> 🔧 Tools used: Python, pandas,streamlit,Logistic Regression , TfidfVectorizer, Docker
+
+## 📁 Project Structure
 
 
 
